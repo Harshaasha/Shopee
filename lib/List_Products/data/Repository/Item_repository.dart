@@ -1,5 +1,5 @@
 import '../Item_Model/ModelClass.dart';
-import '../Service/dio.dart';
+import '../Service/api_service.dart';
 
 class ItemRepository {
   final ApiService _apiService = ApiService();
