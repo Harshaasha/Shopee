@@ -8,7 +8,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Products')),
+      appBar: AppBar(title: Center(
+          child: Text(
+            'Shopee',
+          style: TextStyle(
+            color: Colors.deepOrange,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+          )),
+      backgroundColor: Colors.white,
+        elevation: 0,
+      ),
       body: BlocProvider(
         create: (context) => ItemBloc(ItemRepository())..add(FetchItems()),
         child: BlocBuilder<ItemBloc, ItemState>(

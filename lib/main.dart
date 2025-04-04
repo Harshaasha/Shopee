@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'List_Products/Screens/home_screen.dart';
+import 'List_Products/Screens/Splash_Screen.dart';
 import 'List_Products/data/Repository/Item_repository.dart';
 import 'List_Products/StateManagement/item_bloc.dart';
 
@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Shopee App',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomeScreen(),
+        // theme: ThemeData(
+        //   primarySwatch: Colors.blue,
+        // ),
+        home: SplashScreen(),
       ),
     );
   }
